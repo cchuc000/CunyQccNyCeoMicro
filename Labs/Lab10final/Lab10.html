@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 10 Final</title>
+    <link href="style4.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="header">
+    <h1>My first Website</h1>
+    <p id="demo" syle="color: red;"><b>p1</b></p>
+    </div>
+
+
+    <div class="topnav">
+      <a href="https://www.cnn.com/">CNN</a>
+      <a href="https://www.w3schools.com/">W3Schools</a>
+      <a href="https://www.w3schools.com/html/default.asp">Newtown HS</a>
+      <button   type="button" onclick="myfunction()">Click Me!</button>
+    </div>
+
+    <div class="row">
+      <div class="column">
+      <a href="https://www.w3schools.com/html/default.asp"><h2>HTML</h2></a>
+
+
+
+      <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+      </div>
+
+      <div class="column">
+
+      <h2>CSS</h2>
+
+      <p>Enter Student</p>
+
+      <form name="listform">
+        First Name:<input name="fn" type="text"><br> 
+        Last Name:<input name="ln" type="text"><br> 
+        Birthday:<input name="bd" type="text"><br> 
+        Eye Color:<input name="ec" type="text"><br> 
+        Super Power:<input name="sp" type="text"><br> 
+
+
+      </form> 
+      <h4>These are my students.</h4>
+
+      </div>
+
+      <div class="column">
+
+        <h2>JavaScript</h2>
+        <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <button id="change" onclick="change()">Click here to JS in action</button>
+
+      </div>
+    </div>
+
+    <script>
+      function  change() {
+        document.getElementById('change').innerHTML="Hey Band!! How are you?";
+      }
+    </script>
+
+
+
+
+
+
+    <script>
+    //create a function for button
+    function myfunction ()
+    {
+      /*this will call the function and rewrite html paragraph tag */
+      document.getElementById("demo").innerHTML ="Hello JavaScript!";
+    }
+    </script>
+   
+
+  </body>
+
+</html>
