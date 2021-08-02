@@ -1,9 +1,10 @@
 p{
   text-align: center; /*align all p tags to the middle*/
+  transition-delay: 17000ms;
   color: red;  /*set p tag color to red*/
   transform: translate(-25px,15px); /*move to the left -25px and down 15px (x,y)*/
-  transition-duration: 17000ms;
-  transform: scale3d(10,15,2)
+  animation-name: example;
+  animation-duration: 4s;  
 
 }
 
@@ -22,11 +23,35 @@ p{
   width: 100px;
   height: 100px;
   background: red;
-  transition: width 2s, height 2s, transfrom 2s; 
+  transition: width 2s, height 2s, transfrom 2s;
+  animation-name: dw;
+  animation-duration: 4s;  
 }
 
 #dwt:hover {
   width: 300px;
   height: 300px;
   transform: rotate(180deg);
+}
+
+@keyframes example {
+  from {background-color: red;
+        transform: translate(0px,0px)
+    }
+  to {background-color: yellow;
+      transform: translate(-25px,15px)
+    }
+}
+
+@keyframes dw {
+  from {width: 100px;
+  height: 100px;
+  background: red;
+    }
+  to {width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transfrom 2s;
+  transform: rotate(180deg);
+    }
 }
