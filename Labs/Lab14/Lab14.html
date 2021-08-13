@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charst="utf-8">
-    <title>Lab 12</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Lab 14</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <script src="changecss.js" type="text/JavaScript"></script>   
 
   </head>
 
@@ -34,7 +35,12 @@
       <div class="column">
 
       <h2>CSS</h2>
+      <button type="button" onclick="sty1()">Change Style sheet 1</button>
+      <button type="button" onclick="sty2()">Change Style sheet 2</button>
+      <button type="button" onclick="sty3()">Change Style sheet 3</button>
+      <button type="button" onclick="sty()">Change Style sheet</button>
 
+      
       <p>Enter Student</p>
 
       <form name="listform">
@@ -60,7 +66,7 @@
       </div>
     </div>
 
-   <script>
+    <script>
       function  change() {
         document.getElementById('change').innerHTML="Hey Band!! How are you?";
       }

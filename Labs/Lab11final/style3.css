@@ -1,0 +1,41 @@
+.header{
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(1, 84, 236);
+  color: rgb(247, 247, 247);
+}
+body{
+  background-color: yellowgreen;
+  color: black;
+}
+
+.topnav a{
+  float: left;
+  display: block;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover{
+  background-color: rgb(253, 217, 9);
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px;)

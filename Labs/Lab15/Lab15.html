@@ -2,8 +2,15 @@
 <html>
   <head>
     <meta charst="utf-8">
-    <title>Lab 12</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Lab 15</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <script src="changecss.js" type="text/JavaScript"></script>
+    <script language="JavaScript">
+      function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+      }
+     </script>   
 
   </head>
 
@@ -34,7 +41,12 @@
       <div class="column">
 
       <h2>CSS</h2>
+      <button type="button" onclick="sty1()">Change Style sheet 1</button>
+      <button type="button" onclick="sty2()">Change Style sheet 2</button>
+      <button type="button" onclick="sty3()">Change Style sheet 3</button>
+      <button type="button" onclick="sty()">Change Style sheet</button>
 
+      
       <p>Enter Student</p>
 
       <form name="listform">
@@ -43,9 +55,19 @@
         Birthday:<input name="bd" type="text"><br> 
         Eye Color:<input name="ec" type="text"><br> 
         Super Power:<input name="sp" type="text"><br> 
-
-
       </form> 
+
+      <form>
+        <label><b>Enter a Message</b></label>
+        <input type="text" name="message" id="user_input"><br>
+        <labe1><b>Enter a Message2</b></labe1>
+        <input type="text" name="lname" id="user_input">
+      </form>
+
+      <input type="submit" onclick="showInput();"><br/>
+      <label>Your input: </label>
+      <p><span id='display'></span></p>
+
       <h4>These are my students.</h4>
 
       </div>
@@ -60,7 +82,7 @@
       </div>
     </div>
 
-   <script>
+    <script>
       function  change() {
         document.getElementById('change').innerHTML="Hey Band!! How are you?";
       }

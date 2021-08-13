@@ -2,8 +2,17 @@
 <html>
   <head>
     <meta charst="utf-8">
-    <title>Lab 12</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Lab 11: Fortune Teller</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <script src="changecss.js" type="text/JavaScript"></script>
+    <script src="fortune.js" type="text/JavaScript"></script>
+
+    <script language="JavaScript">
+      function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+      }
+     </script>   
 
   </head>
 
@@ -34,7 +43,12 @@
       <div class="column">
 
       <h2>CSS</h2>
+      <button type="button" onclick="sty1()">Change Style sheet 1</button>
+      <button type="button" onclick="sty2()">Change Style sheet 2</button>
+      <button type="button" onclick="sty3()">Change Style sheet 3</button>
+      <button type="button" onclick="sty()">Change Style sheet</button>
 
+      
       <p>Enter Student</p>
 
       <form name="listform">
@@ -43,11 +57,25 @@
         Birthday:<input name="bd" type="text"><br> 
         Eye Color:<input name="ec" type="text"><br> 
         Super Power:<input name="sp" type="text"><br> 
-
-
       </form> 
-      <h4>These are my students.</h4>
 
+      <div id="container">
+
+       <h1>Discover Your Fortune!</h1>
+
+       <button onclick="tellFortune()">Press to find out your fortune!</button>
+
+
+       <button onclick="reset()">Reset</button>
+
+       <br/><br/>
+
+  <!--This is where the random text will go-->
+        <div id="fortune"></div>
+  
+
+
+      </div>
       </div>
 
       <div class="column">
@@ -60,7 +88,7 @@
       </div>
     </div>
 
-   <script>
+    <script>
       function  change() {
         document.getElementById('change').innerHTML="Hey Band!! How are you?";
       }
