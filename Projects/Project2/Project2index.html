@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project 2: Rock Paper Scissors</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body data-gr-c-s-loaded="true" style="">
+	
+	<h1>Cristofer Chuc</h1>
+	<h3>Rock Paper Scissors</h3>
+	<h2>Play against the computer!</h2>
+	<br><br><br><br><br><br><br><br><br>
+	<center>
+
+	
+	<button name="rock" onclick="cpuRNG(1)">Rock</button>
+	
+	<button name="paper" onclick="cpuRNG(2)">Paper</button>
+	
+	<button name="scissors" onclick="cpuRNG(3)">Scissors</button>	
+		
+	<strong style="font-size: 30px; color:#AD492C"><p id="yourRoll">You picked rock</p></strong>
+		
+	<strong style="font-size: 30px;"><p id="result" style="color:#A331A9">You lose :/ </p></strong>
+		
+	<strong style="font-size: 30px; color:black"><p id="cpuRoll">Computer picked paper</p></strong>
+		
+	</center>
+	
+	<script>
+	
+function cpuRNG(playerThrow) {
+	var roll = Math.floor((Math.random() * 3) + 1);
+	
+	if(playerThrow==1){
+document.getElementById("yourRoll").innerHTML = "You picked rock";	
+	}
+	else if(playerThrow==2){
+document.getElementById("yourRoll").innerHTML = "You picked paper";
+	}
+	else if(playerThrow==3){
+document.getElementById("yourRoll").innerHTML = "You picked scissors";
+	}
+	
+	if(roll==1){
+document.getElementById("cpuRoll").innerHTML = "Computer picked rock!";	
+	}
+	else if(roll==2){
+document.getElementById("cpuRoll").innerHTML = "Computer picked paper!";
+	}
+	else if(roll==3){
+document.getElementById("cpuRoll").innerHTML = "Computer picked scissors!";
+	}
+	
+	if(roll==1&&playerThrow==1){
+document.getElementById("result").innerHTML = "You and the Computer got a tie!";		
+	}
+	if(roll==2&&playerThrow==2){
+document.getElementById("result").innerHTML = "You and the Computer got a tie!";		
+	}
+	if(roll==3&&playerThrow==3){
+document.getElementById("result").innerHTML = "You and the Computer got a tie!";		
+	}
+	if(roll==1&&playerThrow==2){
+document.getElementById("result").innerHTML = "You win!";		
+	}
+	if(roll==1&&playerThrow==3){
+document.getElementById("result").innerHTML = "You lose :/ ";		
+	}
+	if(roll==2&&playerThrow==1){
+document.getElementById("result").innerHTML = "You lose :/ ";		
+	}
+	if(roll==2&&playerThrow==3){
+document.getElementById("result").innerHTML = "You win!";		
+	}
+	if(roll==3&&playerThrow==1){
+document.getElementById("result").innerHTML = "You win!";		
+	}
+	if(roll==3&&playerThrow==2){
+document.getElementById("result").innerHTML = "You lose :/";		
+	}
+}
+		
+	</script>
+
+
+</body></html>
